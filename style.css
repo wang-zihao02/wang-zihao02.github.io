@@ -481,3 +481,91 @@ footer {
         min-height: 800px;
     }
 }
+/* ========================================
+   Project Image Lightbox
+   ======================================== */
+
+/* Make project images feel interactive */
+.project-image {
+    cursor: zoom-in;
+}
+
+
+/* Full-screen dark background */
+.lightbox {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.82);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+
+/* Visible state */
+.lightbox.active {
+    display: flex;
+}
+
+
+/* Enlarged image */
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 85vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 6px;
+
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Close button */
+.lightbox-close {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    color: white;
+
+    font-size: 38px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+
+/* Caption */
+.lightbox-caption {
+    position: absolute;
+
+    bottom: 18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #eeeeee;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    max-width: 80%;
+}
+
