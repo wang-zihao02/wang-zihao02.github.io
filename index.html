@@ -1,20 +1,432 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Zihao Wang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zihao Wang | Tsinghua University</title>
+
+    <meta name="description"
+          content="Zihao Wang - M.S. student at Tsinghua University. Research interests in embodied intelligence, robot learning, world models, and human-AI interaction.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-<h1>Zihao Wang</h1>
+<!-- ===================== Navigation ===================== -->
 
-<p>
-Tsinghua University
-</p>
+<nav>
+    <div class="nav-container">
 
-<p>
-Research interests: Embodied AI, Robot Learning, World Models, and Human-AI Interaction.
-</p>
+        <a class="nav-name" href="#">Zihao Wang</a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#interests">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="CV_Zihao_Wang.pdf" target="_blank">CV</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<main class="container">
+
+
+<!-- ===================== About ===================== -->
+
+<section class="hero" id="about">
+
+    <img
+        src="assets/profile.jpg"
+        alt="Zihao Wang"
+        class="profile-photo"
+    >
+
+    <div class="hero-text">
+
+        <h1>Zihao Wang</h1>
+
+        <div class="subtitle">
+            M.S. Student in Mechanical Engineering<br>
+            Tsinghua University
+        </div>
+
+        <p>
+            I am a master's student in Mechanical Engineering at
+            Tsinghua University. My previous research spans physical
+            robotic systems from sensing and perception to prediction,
+            planning, control, and experimental validation.
+        </p>
+
+        <p>
+            These experiences have led me to broader questions about
+            how intelligent agents should represent and predict the
+            physical and human world for decision making. I am currently
+            interested in embodied and spatial intelligence, multimodal
+            learning, world models, and human-AI interaction.
+        </p>
+
+        <div class="links">
+
+            <a href="mailto:w-zihao24@mails.tsinghua.edu.cn">
+                Email
+            </a>
+
+            <a href="CV_Zihao_Wang.pdf" target="_blank">
+                CV
+            </a>
+
+            <!-- 后面有 Google Scholar 后，把 # 换成你的链接 -->
+            <a href="#" target="_blank">
+                Google Scholar
+            </a>
+
+            <!-- 换成你的 GitHub Profile -->
+            <a href="https://github.com/wang-zihao02" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================== Research Interests ===================== -->
+
+<section id="interests">
+
+    <h2>Research Interests</h2>
+
+    <p>
+        I am broadly interested in intelligent systems that perceive,
+        predict, and act in complex physical and human environments.
+        In particular, I am exploring the following research directions:
+    </p>
+
+    <div class="interest-grid">
+
+        <div class="interest-card">
+
+            <h3>Embodied & Spatial Intelligence</h3>
+
+            <p>
+                Learning representations of physical environments
+                that support perception, prediction, reasoning,
+                and action.
+            </p>
+
+        </div>
+
+
+        <div class="interest-card">
+
+            <h3>World Models & Decision-Aware Learning</h3>
+
+            <p>
+                Understanding what predictive representations should
+                preserve for downstream decisions, failure anticipation,
+                and corrective intervention.
+            </p>
+
+        </div>
+
+
+        <div class="interest-card">
+
+            <h3>Human-AI Interaction</h3>
+
+            <p>
+                Building intelligent systems that model human intent,
+                behavior, uncertainty, and context in order to interact
+                adaptively in physical environments.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================== Selected Research ===================== -->
+
+<section id="projects">
+
+    <h2>Selected Research</h2>
+
+
+    <div class="project">
+
+        <div class="project-title">
+            Understanding and Correcting Prediction Failures
+            in Physical Robotic Systems
+        </div>
+
+        <div class="project-meta">
+            Tsinghua University · 2023–Present
+        </div>
+
+        <p>
+            I developed a temporal learning framework for diagnosing
+            prediction and control-model errors in an intelligent
+            pipeline-welding robotic system. Eleven physical variables
+            from the sensing-control pipeline were modeled using LSTM,
+            while SHAP-based temporal attribution was used to identify
+            variables associated with prediction failures.
+        </p>
+
+        <p>
+            Rather than treating attribution as the final goal,
+            high-attribution variables were traced back to their
+            underlying mechanical and control models. Targeted model
+            corrections were then introduced and validated through
+            physical experiments, resulting in reductions in both
+            prediction error and the corresponding attribution.
+        </p>
+
+        <div class="tags">
+            <span class="tag">LSTM</span>
+            <span class="tag">Temporal Attribution</span>
+            <span class="tag">Failure Diagnosis</span>
+            <span class="tag">Physical Validation</span>
+            <span class="tag">Robotics</span>
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-title">
+            Vision-Based Intelligent Pipeline Welding System
+        </div>
+
+        <div class="project-meta">
+            Beijing Municipal Science and Technology Commission Project
+        </div>
+
+        <p>
+            I worked on an end-to-end intelligent robotic welding
+            system involving structured-light sensing, geometric
+            perception, robot modeling, trajectory estimation,
+            planning, and physical control.
+        </p>
+
+        <p>
+            My work included a five-degree-of-freedom robot design
+            based on the Pieper criterion, closed-form inverse
+            kinematics, laser-line feature extraction, and
+            three-dimensional system-error estimation using
+            point-cloud registration with ICP and RANSAC.
+        </p>
+
+        <div class="tags">
+            <span class="tag">Robot Perception</span>
+            <span class="tag">ICP</span>
+            <span class="tag">RANSAC</span>
+            <span class="tag">Robot Kinematics</span>
+            <span class="tag">Control</span>
+        </div>
+
+    </div>
+
+
+
+    <div class="project">
+
+        <div class="project-title">
+            Multimodal Sensing and Learning for Robotic Welding
+        </div>
+
+        <div class="project-meta">
+            Technology Transfer Project · 2024–Present
+        </div>
+
+        <p>
+            I developed learning-based perception methods for
+            real-time robotic welding, including YOLO11-based
+            laser-line feature recognition and Weld-TRINet for
+            real-time feature-point estimation.
+        </p>
+
+        <p>
+            I also contributed to a multimodal sensing system
+            integrating vision and force sensing and developed
+            time-frequency-spatial processing methods for
+            field robotic operation.
+        </p>
+
+        <div class="tags">
+            <span class="tag">YOLO11</span>
+            <span class="tag">Multimodal Sensing</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Physical Systems</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================== Publications ===================== -->
+
+<section id="publications">
+
+    <h2>Publications</h2>
+
+
+    <div class="publication">
+
+        <div class="publication-title">
+            Research on Pipeline Intelligent Welding Based on
+            Combined Line Structured Lights Vision Sensing:
+            A Partitioned Time-Frequency-Space Image Processing Algorithm
+        </div>
+
+        <div class="publication-info">
+            C. Zhu, <strong>Z. Wang</strong>, Z. Zhu<br>
+            <em>International Journal of Advanced Manufacturing Technology</em>,
+            2024. Co-first author.
+        </div>
+
+    </div>
+
+
+    <div class="publication">
+
+        <div class="publication-title">
+            Research and Intelligent Development of Pipeline
+            External Welding Equipment and Sensing Technology
+        </div>
+
+        <div class="publication-info">
+            C. Zhu, <strong>Z. Wang</strong>, Z. Zhu, et al.<br>
+            <em>Journal of Manufacturing Processes</em>, 2025.
+        </div>
+
+    </div>
+
+
+    <div class="publication">
+
+        <div class="publication-title">
+            Design and Modeling of Pipeline Welding Robot Based
+            on Pieper Criterion and Construction of Integrated
+            Intelligent Welding System
+        </div>
+
+        <div class="publication-info">
+            C. Zhu, <strong>Z. Wang</strong>, Z. Zhu, et al.<br>
+            <em>Welding in the World</em>, 2025.
+        </div>
+
+    </div>
+
+
+    <div class="publication">
+
+        <div class="publication-title">
+            Cross-Layer Trajectory Prediction and Fusion Control
+            for Pipeline Welding Robots Based on Online Planning
+        </div>
+
+        <div class="publication-info">
+            <strong>Z. Wang</strong>, C. Zhu, Z. Zhu, et al.<br>
+            Under review.
+        </div>
+
+    </div>
+
+
+    <div class="publication">
+
+        <div class="publication-title">
+            Classification and Parameter Optimization of Automatic
+            Welding Tracking Errors Based on Explainable Temporal Learning
+        </div>
+
+        <div class="publication-info">
+            <strong>Z. Wang</strong>, C. Zhu, Z. Zhu<br>
+            Manuscript in revision.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================== Experience ===================== -->
+
+<section id="experience">
+
+    <h2>Education & Experience</h2>
+
+
+    <h3>M.S. in Mechanical Engineering</h3>
+
+    <p>
+        <strong>Tsinghua University</strong><br>
+        2024–Present · Beijing, China<br>
+        GPA: 3.76 / 4.00
+    </p>
+
+
+    <h3>B.Eng. in Mechanical Engineering</h3>
+
+    <p>
+        <strong>Tsinghua University</strong><br>
+        2020–2024 · Beijing, China<br>
+        GPA: 3.57 / 4.00 · Rank: 12 / 75
+    </p>
+
+
+    <h3>Software Engineering Coursework</h3>
+
+    <p>
+        Tsinghua University · 2021–2023<br>
+        Object-Oriented Programming, Discrete Mathematics,
+        and Fundamentals of Programming.
+    </p>
+
+
+    <h3>Technical Skills</h3>
+
+    <p>
+        <strong>Programming:</strong> Python, C++, MATLAB<br>
+        <strong>Engineering:</strong> SolidWorks, AutoCAD<br>
+        <strong>Research:</strong> Machine Learning, Computer Vision,
+        Robotic Perception, Modeling and Control
+    </p>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ===================== Footer ===================== -->
+
+<footer>
+
+    © 2026 Zihao Wang · Tsinghua University
+
+</footer>
+
 
 </body>
 </html>
