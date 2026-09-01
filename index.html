@@ -161,6 +161,7 @@
                 src="assets/project_failure.png"
                 alt="Failure attribution and correction framework"
                 class="project-image project-image-1"
+                ondblclick="openLightbox(this.src, this.alt)"
             >
         </div>
 
@@ -214,6 +215,7 @@
                 src="assets/project_robot.png"
                 alt="Vision-based intelligent pipeline welding robotic system"
                 class="project-image project-image-2"
+                ondblclick="openLightbox(this.src, this.alt)"
             >
         </div>
 
@@ -267,6 +269,7 @@
                 src="assets/project_multimodal.png"
                 alt="Multimodal sensing and learning for robotic welding"
                 class="project-image project-image-3"
+                ondblclick="openLightbox(this.src, this.alt)"
             >
         </div>
 
@@ -477,5 +480,47 @@
 </footer>
 
 
+<!-- ===================== Image Lightbox ===================== -->
+<div id="image-lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+
+    <img
+        id="lightbox-image"
+        class="lightbox-image"
+        src=""
+        alt=""
+        onclick="event.stopPropagation()"
+    >
+
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+<script>
+function openLightbox(src, alt) {
+    const lightbox = document.getElementById("image-lightbox");
+    const image = document.getElementById("lightbox-image");
+    const caption = document.getElementById("lightbox-caption");
+
+    image.src = src;
+    image.alt = alt;
+    caption.textContent = alt;
+
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+    document.getElementById("image-lightbox").classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+});
+</script>
+
 </body>
 </html>
+
