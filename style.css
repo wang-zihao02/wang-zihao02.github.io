@@ -100,20 +100,21 @@ nav {
     font-size: 16px;
 }
 
-.links {
-    margin-top: 20px;
+.contact-info {
+    margin-top: 22px;
+    font-size: 15px;
 }
 
-.links a {
-    margin-right: 18px;
-    text-decoration: none;
+.contact-info a {
     color: #0066cc;
-    font-weight: 500;
+    text-decoration: none;
+    margin-left: 5px;
 }
 
-.links a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
+
 
 /* ---------- Sections ---------- */
 
