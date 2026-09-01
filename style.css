@@ -174,16 +174,6 @@ section h3 {
    Selected Research Projects
    ======================================== */
 
-/*
-   Desktop layout:
-
-   ┌───────────────┐    Project Title
-   │               │    Meta information
-   │     IMAGE     │    Description...
-   │               │    Description...
-   └───────────────┘    Tags
-*/
-
 .project {
     display: flex;
     gap: 30px;
@@ -192,12 +182,9 @@ section h3 {
 }
 
 
-/* ----------------------------------------
-   Fixed-size image window
-
-   All three project images will appear
-   exactly the same size on the homepage.
-   ---------------------------------------- */
+/* ========================================
+   Project image window
+   ======================================== */
 
 .project-image-wrapper {
     width: 300px;
@@ -214,10 +201,7 @@ section h3 {
 }
 
 
-/*
-   Images preserve their original aspect ratio.
-   Extra parts are cropped automatically.
-*/
+/* Project images */
 
 .project-image {
     width: 100%;
@@ -228,51 +212,39 @@ section h3 {
 
     display: block;
 
+    cursor: zoom-in;
+
     transition: transform 0.25s ease;
 }
 
 
-/* Slight zoom when hovering over image */
+/* Slight zoom on hover */
 
 .project-image-wrapper:hover .project-image {
     transform: scale(1.03);
 }
 
 
-/* ----------------------------------------
-   Individual crop positions
+/* ========================================
+   Individual image crop positions
+   ======================================== */
 
-   You can change these later if an important
-   part of a figure is being cropped.
-   ---------------------------------------- */
-
-/* Project 1:
-   LSTM-SHAP / failure attribution framework
-*/
 .project-image-1 {
     object-position: center center;
 }
 
-
-/* Project 2:
-   Physical robotic welding system
-*/
 .project-image-2 {
     object-position: center center;
 }
 
-
-/* Project 3:
-   YOLO / Weld-TRINet architecture
-*/
 .project-image-3 {
     object-position: center center;
 }
 
 
-/* ----------------------------------------
+/* ========================================
    Project text
-   ---------------------------------------- */
+   ======================================== */
 
 .project-content {
     flex: 1;
@@ -299,9 +271,9 @@ section h3 {
 }
 
 
-/* ----------------------------------------
+/* ========================================
    Research tags
-   ---------------------------------------- */
+   ======================================== */
 
 .tags {
     margin-top: 12px;
@@ -412,14 +384,14 @@ footer {
 
 @media (max-width: 750px) {
 
-    /* ---------- Navigation ---------- */
+    /* Navigation */
 
     .nav-links {
         display: none;
     }
 
 
-    /* ---------- Hero ---------- */
+    /* Hero */
 
     .hero {
         flex-direction: column;
@@ -440,14 +412,14 @@ footer {
     }
 
 
-    /* ---------- Research interests ---------- */
+    /* Research interests */
 
     .interest-grid {
         grid-template-columns: 1fr;
     }
 
 
-    /* ---------- Research projects ---------- */
+    /* Research projects */
 
     .project {
         flex-direction: column;
@@ -456,11 +428,6 @@ footer {
 
         margin-bottom: 45px;
     }
-
-    /*
-       On mobile the image automatically
-       fills the available page width.
-    */
 
     .project-image-wrapper {
         width: 100%;
@@ -475,97 +442,9 @@ footer {
     }
 
 
-    /* ---------- CV ---------- */
+    /* CV */
 
     .cv-container iframe {
         min-height: 800px;
     }
 }
-/* ========================================
-   Project Image Lightbox
-   ======================================== */
-
-/* Make project images feel interactive */
-.project-image {
-    cursor: zoom-in;
-}
-
-
-/* Full-screen dark background */
-.lightbox {
-    display: none;
-
-    position: fixed;
-    inset: 0;
-
-    z-index: 1000;
-
-    background: rgba(0, 0, 0, 0.82);
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 50px;
-}
-
-
-/* Visible state */
-.lightbox.active {
-    display: flex;
-}
-
-
-/* Enlarged image */
-.lightbox-image {
-    max-width: 90vw;
-    max-height: 85vh;
-
-    width: auto;
-    height: auto;
-
-    object-fit: contain;
-
-    background: white;
-
-    border-radius: 6px;
-
-    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
-}
-
-
-/* Close button */
-.lightbox-close {
-    position: absolute;
-
-    top: 20px;
-    right: 30px;
-
-    color: white;
-
-    font-size: 38px;
-    font-weight: 300;
-
-    cursor: pointer;
-
-    line-height: 1;
-}
-
-
-/* Caption */
-.lightbox-caption {
-    position: absolute;
-
-    bottom: 18px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    color: #eeeeee;
-
-    font-size: 14px;
-
-    text-align: center;
-
-    max-width: 80%;
-}
-
