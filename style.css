@@ -202,10 +202,17 @@ section h3 {
 }
 
 
-.education-column p,
-.technical-column p {
+.education-column p{
 
     margin-bottom: 18px;
+
+}
+
+.technical-column p {
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
 
 }
 
