@@ -478,12 +478,14 @@ footer {
 
 
 
-#lightbox img {
+#lightbox-img {
 
     max-width: 90vw;
 
     max-height: 90vh;
 
+   background:white;
+   
     object-fit: contain;
 
 }
