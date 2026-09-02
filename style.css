@@ -447,3 +447,46 @@ footer {
         min-height: 800px;
     }
 }
+
+/* ========================================
+   Image Lightbox
+   ======================================== */
+
+#lightbox {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+}
+
+
+#lightbox-img {
+
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+
+}
+
+
+.project-image {
+
+    cursor: pointer;
+
+}
+
