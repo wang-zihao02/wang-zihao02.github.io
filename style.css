@@ -122,6 +122,14 @@ nav {
     text-decoration: none;
     margin-left: 5px;
 }
+.phone-info {
+
+    margin-top: 6px;
+
+    color: #2b2b2b;
+
+}
+
 
 .contact-info a:hover {
     text-decoration: underline;
@@ -145,10 +153,24 @@ section h2 {
 }
 
 section h3 {
-    font-size: 19px;
+
+    font-size: 18px;
+
     margin-bottom: 6px;
+
     color: #333;
+
+    font-weight: 600;
+
 }
+
+
+.skill-title {
+
+    margin-top: 35px;
+
+}
+
 
 
 /* ========================================
