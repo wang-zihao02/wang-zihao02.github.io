@@ -170,6 +170,54 @@ section h3 {
     margin-top: 32px;
 
 }
+/* ========================================
+   Education & Experience Layout
+   ======================================== */
+
+
+.experience-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+}
+
+
+.education-column h3,
+.technical-column h3 {
+
+    font-size: 19px;
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+    color: #333;
+
+}
+
+
+.education-column p,
+.technical-column p {
+
+    margin-bottom: 35px;
+
+}
+
+
+
+.technical-column {
+
+    border-left: 1px solid #eeeeee;
+
+    padding-left: 45px;
+
+}
 
 
 
@@ -476,6 +524,24 @@ footer {
     .cv-container iframe {
         min-height: 800px;
     }
+
+   .experience-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+}
+
+
+.technical-column {
+
+    border-left: none;
+
+    padding-left: 0;
+
+}
+
 }
 
 /* ========================================
