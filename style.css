@@ -78,7 +78,7 @@ nav {
 .hero {
     display: flex;
     align-items: center;
-    gap: 55px;
+    gap: 70px;
     padding: 70px 0 55px;
 }
 
@@ -93,6 +93,7 @@ nav {
 
 .hero-text {
     flex: 1;
+    max-width: 720px;
 }
 
 .hero h1 {
