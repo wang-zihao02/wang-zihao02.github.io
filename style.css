@@ -467,7 +467,7 @@ footer {
     width: 100vw;
     height: 100vh;
 
-    background: rgba(0,0,0,0.85);
+    background: rgba(245,245,245,0.98);
 
     justify-content: center;
     align-items: center;
@@ -475,6 +475,7 @@ footer {
     z-index: 99999;
 
 }
+
 
 
 #lightbox img {
