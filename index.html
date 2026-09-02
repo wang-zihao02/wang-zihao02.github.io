@@ -546,7 +546,7 @@ Granted Aug. 12, 2025.
 
 <div id="lightbox" onclick="closeLightbox()">
 
-    <img id="lightbox-img">
+    <img id="lightbox-img" onclick="event.stopPropagation()">
 
 </div>
 
@@ -554,16 +554,11 @@ Granted Aug. 12, 2025.
 
 function openLightbox(src){
 
-    const lightbox = document.getElementById("lightbox");
-    const img = document.getElementById("lightbox-img");
+    document.getElementById("lightbox-img").src = src;
 
-
-    img.src = src;
-
-    lightbox.style.display = "flex";
+    document.getElementById("lightbox").style.display = "flex";
 
 }
-
 
 
 function closeLightbox(){
@@ -571,6 +566,7 @@ function closeLightbox(){
     document.getElementById("lightbox").style.display = "none";
 
 }
+
 
 
 </script>
