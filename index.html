@@ -159,8 +159,7 @@
                 src="assets/project_failure.png"
                 alt="Failure attribution and correction framework"
                 class="project-image project-image-1"
-                title="Double-click to view full image"
-                ondblclick="window.open(this.src, '_blank')"
+                onclick="openLightbox(this.src)"
             >
 
         </div>
@@ -216,8 +215,7 @@
                 src="assets/project_robot.png"
                 alt="Vision-based intelligent pipeline welding robotic system"
                 class="project-image project-image-2"
-                title="Double-click to view full image"
-                ondblclick="window.open(this.src, '_blank')"
+                onclick="openLightbox(this.src)"
             >
 
         </div>
@@ -273,8 +271,7 @@
                 src="assets/project_multimodal.png"
                 alt="Multimodal sensing and learning for robotic welding"
                 class="project-image project-image-3"
-                title="Double-click to view full image"
-                ondblclick="window.open(this.src, '_blank')"
+                onclick="openLightbox(this.src)"
             >
 
         </div>
@@ -544,6 +541,14 @@ Granted Aug. 12, 2025.
 <footer>
     © 2026 Zihao Wang · Tsinghua University
 </footer>
+
+<!-- ===================== Lightbox ===================== -->
+
+<div id="lightbox" onclick="closeLightbox()">
+
+    <img id="lightbox-img">
+
+</div>
 
 
 </body>
